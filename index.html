@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+
+        <style>
+            .accordion {
+                width: 600px;
+                border: 1px solid #ccc;
+                border-bottom: none;
+            }
+            .accordion dt, .accordion dd {
+                border-bottom: 1px solid #ccc;
+                margin: 0px;
+            }
+            .accordion dt {
+                background: rgba(193, 221, 252, 0.24);
+                cursor: pointer;
+                padding: 8px 4px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .accordion dd {
+                padding: 12px 8px;
+            }
+        </style>
+        <title>Simple js Accordion</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/jquery.simple-accordion.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#my-accordion').simpleAccordion({open: true});
+            });
+        </script>
+    </head>
+    <body>
+        <dl class="accordion" id="my-accordion">
+            <dt>Heading 1</dt>
+            <dd> Cras dolor elit, porttitor ac diam bibendum, eleifend aliquam erat.</dd>
+            <dt>Heading 2</dt>
+            <dd>  Donec blandit risus nec est tristique interdum.</dd>
+            <dt>Heading 3</dt>
+            <dd>Fusce sit amet arcu id justo malesuada faucibus. </dd>
+            <dt>Heading 4</dt>
+            <dd> Aliquam tincidunt lobortis sem at porttitor.</dd>
+        </dl>
+    </body>
+</html>
